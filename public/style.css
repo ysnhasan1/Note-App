@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+}
+
+header {
+  padding: 1px 30px;
+  background-color: seagreen;
+}
+
+header h1 {
+  color: azure;
+  font-size: 2rem;
+  font-family: "Rubik Distressed", cursive;
+  font-weight: lighter;
+  letter-spacing: 10px;
+}
+
+form {
+  position: relative;
+  max-width: 500px;
+  margin: 15px auto 50px auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 4px;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form input {
+  font-weight: bold;
+}
+
+form small {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: orange;
+  padding: 7px;
+}
+
+form button {
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  background-color: seagreen;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.flex-container {
+
+  /* to center the div */
+  width: 60%;
+  margin-left: 20%;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.note {
+  /* flex items */
+
+  flex-grow: 1;
+  min-width: 25%;
+
+  background-color: white;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  border-radius: 15px;
+  padding: 1rem;
+
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note h1 {
+  font-size: 1.2em;
+  padding-left: 5px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.note p {
+  font-size: 1.1em;
+  padding-left: 5px;
+  margin-bottom: 6px;
+}
+
+.note svg {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.note svg:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer p a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+  header h1 {
+    text-align: center;
+  }
+
+  .flex-container {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .note {
+    min-width: 50%;
+  }
+}
